@@ -1,7 +1,5 @@
 importers:
   .:
-    dependencies:
-      '@not-govuk/anchor': 0.2.9_609c94966c085296a907b147b2752d64
     devDependencies:
       '@babel/core': 7.11.4
       '@babel/plugin-proposal-export-namespace-from': 7.10.4_@babel+core@7.11.4
@@ -10,6 +8,7 @@ importers:
       '@babel/preset-typescript': 7.10.4_@babel+core@7.11.4
       '@hods/plop-pack': link:lib/plop-pack
       '@mdx-js/react': 1.6.11_react@16.14.0
+      '@not-govuk/anchor': 0.2.9_609c94966c085296a907b147b2752d64
       '@not-govuk/components': 0.2.6_f9151570e7684926ba84f75dc8f166c3
       '@not-govuk/docs-components': 0.2.6_e0b71065dafb84c9aad0ad10a56d88b7
       '@not-govuk/storybook-preset': 0.2.6_8cfa604fd4195d0d5b8248a23054d5f1
@@ -242,19 +241,20 @@ importers:
       typescript: ^3.9.2
   components/pagination:
     dependencies:
-      '@not-govuk/anchor': 0.2.9_f0985349df48299f7cc281311e9bebca
+      '@hods/components': 0.1.10_@not-govuk+docs-components@0.2.9
+      '@not-govuk/anchor': 0.2.9_@not-govuk+docs-components@0.2.9
       '@not-govuk/component-helpers': 0.2.9
-      '@not-govuk/docs-components': 0.2.9_react@17.0.2
+      '@not-govuk/docs-components': 0.2.9
       '@not-govuk/sass-base': 0.2.9
-      react: 17.0.2
     devDependencies:
-      '@mdx-js/react': 1.6.22_react@17.0.2
-      '@not-govuk/component-test-helpers': 0.2.6_react@17.0.2
+      '@mdx-js/react': 1.6.22
+      '@not-govuk/component-test-helpers': 0.2.6
       '@types/react': 16.14.2
       jest: 26.6.3
       ts-jest: 26.4.4_jest@26.6.3+typescript@3.9.7
       typescript: 3.9.7
     specifiers:
+      '@hods/components': ^0.1.10
       '@mdx-js/react': ^1.6.5
       '@not-govuk/anchor': ^0.2.9
       '@not-govuk/component-helpers': ^0.2.9
@@ -263,7 +263,6 @@ importers:
       '@not-govuk/sass-base': ^0.2.9
       '@types/react': ^16.9.35
       jest: ^26.1.0
-      react: ^17.0.2
       ts-jest: ^26.1.1
       typescript: ^3.9.2
   components/status-banner:
@@ -4852,6 +4851,88 @@ packages:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
     resolution:
       integrity: sha512-wYn6r8zVZyQJ6rQaALBEln5B1pzxb9shV5Ef97kTvn6yVGrqyXVnDqnU24MXnFubR+rZjBY9NWuxX3FB2sTsjg==
+  /@hods/alert/0.1.10_@not-govuk+docs-components@0.2.9:
+    dependencies:
+      '@hods/sass-base': 0.1.10
+      '@not-govuk/component-helpers': 0.2.9
+      '@not-govuk/docs-components': 0.2.9
+      '@not-govuk/inset-text': 0.2.9_@not-govuk+docs-components@0.2.9
+    dev: false
+    peerDependencies:
+      '@not-govuk/docs-components': ^0.1.0
+      react: ^16.9.35
+    resolution:
+      integrity: sha512-LLvi30ez2zNfoSRFq3vpwDtb7Cd56+PGO/zWpg+2rGBxHfq8O2bndzVXnuJuGmpd2FyzDsOd/005/tkb/0rI3Q==
+  /@hods/components/0.1.10_@not-govuk+docs-components@0.2.9:
+    dependencies:
+      '@hods/alert': 0.1.10_@not-govuk+docs-components@0.2.9
+      '@hods/footer': 0.1.10_@not-govuk+docs-components@0.2.9
+      '@hods/header': 0.1.10_@not-govuk+docs-components@0.2.9
+      '@hods/page': 0.1.10_@not-govuk+docs-components@0.2.9
+      '@hods/sass-base': 0.1.10
+      '@hods/status-banner': 0.1.10_@not-govuk+docs-components@0.2.9
+    dev: false
+    peerDependencies:
+      '@not-govuk/docs-components': '*'
+    resolution:
+      integrity: sha512-q1ZTj1Hq957y8L8m6up2TSDnioEeU47k6ndkxU0qvXEO0qU+umGFEdXK96cu8w+nseQQ+eJfj/MpmBcIwTPJ7g==
+  /@hods/footer/0.1.10_@not-govuk+docs-components@0.2.9:
+    dependencies:
+      '@hods/sass-base': 0.1.10
+      '@not-govuk/component-helpers': 0.2.9
+      '@not-govuk/docs-components': 0.2.9
+      '@not-govuk/link': 0.2.9_@not-govuk+docs-components@0.2.9
+    dev: false
+    peerDependencies:
+      '@not-govuk/docs-components': ^0.1.0
+      react: ^16.9.35
+    resolution:
+      integrity: sha512-Rs6BDv8iUp61j4y9NbMgI4TUYW4YvVvRTzH8Hu6mS0OgZMT+iqXX5171atuExzq+AY4tr4mDlxrPBvuh4RhKqA==
+  /@hods/header/0.1.10_@not-govuk+docs-components@0.2.9:
+    dependencies:
+      '@hods/sass-base': 0.1.10
+      '@not-govuk/anchor-list': 0.2.9_@not-govuk+docs-components@0.2.9
+      '@not-govuk/component-helpers': 0.2.9
+      '@not-govuk/docs-components': 0.2.9
+      '@not-govuk/link': 0.2.9_@not-govuk+docs-components@0.2.9
+    dev: false
+    peerDependencies:
+      '@not-govuk/docs-components': ^0.1.0
+      react: ^16.9.35
+    resolution:
+      integrity: sha512-y/g73Z8ROW6gXaLfTNVi6ilw28LBXEc7AmP1Yig3axClYCiX59AULnav1ovyjgXkzn6pUiCHOM6mt/zzsqYIKA==
+  /@hods/page/0.1.10_@not-govuk+docs-components@0.2.9:
+    dependencies:
+      '@hods/footer': 0.1.10_@not-govuk+docs-components@0.2.9
+      '@hods/header': 0.1.10_@not-govuk+docs-components@0.2.9
+      '@hods/sass-base': 0.1.10
+      '@not-govuk/component-helpers': 0.2.9
+      '@not-govuk/docs-components': 0.2.9
+      govuk-frontend: 3.11.0
+    dev: false
+    peerDependencies:
+      '@not-govuk/docs-components': ^0.1.0
+      react: ^16.9.35
+      react-helmet-async: ^1.0.7
+    resolution:
+      integrity: sha512-fkRUL1NkLR1MUqVBq1SwwE/Y3Xo1jrBFksrHHURlezaH/3QFlNJuLVvT2ih6/6Y6XB+vTBL9BoJkO9+E/TiqPQ==
+  /@hods/sass-base/0.1.10:
+    dependencies:
+      '@not-govuk/sass-base': 0.2.9
+    dev: false
+    resolution:
+      integrity: sha512-TvxfR47TD1Lsd1Tua5HoZ/sqQNO9gVe02Xvjql4sunWA59ythbHXr297h6Uuhwqc5mnROt2laa2flqpwuW+cQw==
+  /@hods/status-banner/0.1.10_@not-govuk+docs-components@0.2.9:
+    dependencies:
+      '@hods/sass-base': 0.1.10
+      '@not-govuk/component-helpers': 0.2.9
+      '@not-govuk/docs-components': 0.2.9
+    dev: false
+    peerDependencies:
+      '@not-govuk/docs-components': ^0.1.0
+      react: ^16.9.35
+    resolution:
+      integrity: sha512-fTN4K/WosPomAFyB1sqWz60w/aBqfzm1NimUvkdjrUPu+nL1Z+oYpR59XGbMESFVd9TUm0KFtmjT6J76YddTnw==
   /@icons/material/0.2.4_react@16.14.0:
     dependencies:
       react: 16.14.0
@@ -5565,14 +5646,6 @@ packages:
       react: ^16.13.1 || ^17.0.0
     resolution:
       integrity: sha512-TDoPum4SHdfPiGSAaRBw7ECyI8VaHpK8GJugbJIJuqyh6kzw9ZLJZW3HGL3NNrJGxcAixUvqROm+YuQOo5eXtg==
-  /@mdx-js/react/1.6.22_react@17.0.2:
-    dependencies:
-      react: 17.0.2
-    dev: true
-    peerDependencies:
-      react: ^16.13.1 || ^17.0.0
-    resolution:
-      integrity: sha512-TDoPum4SHdfPiGSAaRBw7ECyI8VaHpK8GJugbJIJuqyh6kzw9ZLJZW3HGL3NNrJGxcAixUvqROm+YuQOo5eXtg==
   /@mdx-js/util/1.6.21:
     dev: true
     resolution:
@@ -5663,6 +5736,18 @@ packages:
       react-router-dom: '*'
     resolution:
       integrity: sha512-DFide6lHM4Cu9O3FUObbB1S6ONnpNzPfD1iEfnBuNROO9UwbZhGjIW0GlWcdnEd5bteVL4xjgj9Xlwh9uqRPnA==
+  /@not-govuk/anchor-list/0.2.9_@not-govuk+docs-components@0.2.9:
+    dependencies:
+      '@not-govuk/anchor': 0.2.9_@not-govuk+docs-components@0.2.9
+      '@not-govuk/component-helpers': 0.2.9
+      '@not-govuk/docs-components': 0.2.9
+      '@not-govuk/route-utils': 0.2.6
+    dev: false
+    peerDependencies:
+      '@not-govuk/docs-components': ^0.2.0
+      react: ^16.9.35
+    resolution:
+      integrity: sha512-h6UTfmXbfnBrp3h3y9+fXMLHT3uoQiF7m8mGKVoFaqcl+jRJpQKYD/i9TJDQxj/noJI32wILga6xENLNR6iVwA==
   /@not-govuk/anchor/0.2.6:
     dependencies:
       '@not-govuk/component-helpers': 0.2.6
@@ -5708,19 +5793,18 @@ packages:
       '@not-govuk/route-utils': 0.2.6_react-router-dom@5.2.0
       react: 16.14.0
       react-router-dom: 5.2.0_react@16.14.0
-    dev: false
+    dev: true
     peerDependencies:
       '@not-govuk/docs-components': ^0.2.0
       react: ^16.9.35
       react-router-dom: ^5.1.5
     resolution:
       integrity: sha512-EyI0sTiFCQUrQfrFbefpn8ny7U9n8WL1bNbx0Vo0ngrrHRNbNf7EyPxJc7tkxZCCjB/iRSDtnXjAbG+2n1anbw==
-  /@not-govuk/anchor/0.2.9_f0985349df48299f7cc281311e9bebca:
+  /@not-govuk/anchor/0.2.9_@not-govuk+docs-components@0.2.9:
     dependencies:
       '@not-govuk/component-helpers': 0.2.9
-      '@not-govuk/docs-components': 0.2.9_react@17.0.2
+      '@not-govuk/docs-components': 0.2.9
       '@not-govuk/route-utils': 0.2.6
-      react: 17.0.2
     dev: false
     peerDependencies:
       '@not-govuk/docs-components': ^0.2.0
@@ -5848,22 +5932,11 @@ packages:
     resolution:
       integrity: sha512-OTfhQNrMrrLZf9yPVTXGWrx3V6iwzf/yG/1+qc7PmXe4pzJLVinFhCZUrm6zIy7IRjS4TIZDJXklcJj3+j4c/Q==
   /@not-govuk/component-helpers/0.2.9:
-    dev: false
     resolution:
       integrity: sha512-JoVD6CaEqCb3woDbVecAwtXexOJ77cXJFAQKcUdgc7PpTLZcyTfEgg7k5lKzfZ0i3zd2pIs5KP6rnKR5TtFP8g==
   /@not-govuk/component-test-helpers/0.2.6:
     dependencies:
       enzyme: 3.11.0
-    dev: true
-    peerDependencies:
-      react: ^16.9.35
-      react-router: ^5.1.7
-    resolution:
-      integrity: sha512-NseS1xRL3Bk0ahyjyCwaQD+GG6rlhkQ6+qTETLZqSf+QttdPJqlB0yThe8NUlYU4uO07I9a8WWF2Jobtp+rqCg==
-  /@not-govuk/component-test-helpers/0.2.6_react@17.0.2:
-    dependencies:
-      enzyme: 3.11.0
-      react: 17.0.2
     dev: true
     peerDependencies:
       react: ^16.9.35
@@ -6012,16 +6085,15 @@ packages:
       react-router-dom: '*'
     resolution:
       integrity: sha512-PNbx/dGOmXy4B6YxOMci9OIOnoyBnjcXL7DoaBme2Fr2WS4hOr0FuM11kJEzLzX/5bf7nmKCmzFTqP9G+XRSuw==
-  /@not-govuk/docs-components/0.2.9_react@17.0.2:
+  /@not-govuk/docs-components/0.2.9:
     dependencies:
       '@not-govuk/component-helpers': 0.2.9
       '@not-govuk/memoize': 0.2.9
-      '@not-govuk/simple-table': 0.2.6_f0985349df48299f7cc281311e9bebca
-      '@not-govuk/tabs-internal': 0.2.6_f0985349df48299f7cc281311e9bebca
+      '@not-govuk/simple-table': 0.2.6_@not-govuk+docs-components@0.2.9
+      '@not-govuk/tabs-internal': 0.2.6_@not-govuk+docs-components@0.2.9
       prettier: 2.2.1
       prismjs: 1.23.0
       prismjs-github: 1.0.0
-      react: 17.0.2
     dev: false
     peerDependencies:
       '@storybook/addon-docs': ^6.0.28
@@ -6173,6 +6245,18 @@ packages:
       react: ^16.9.35
     resolution:
       integrity: sha512-ObmrGw2fn0BUN4HtP0dJj0HgmyRE5stXsdqEsoWesEfsUvoW7tE9DdWJWVTSq0OmGuYFaHAeHxv6gGRS5i7Wcw==
+  /@not-govuk/inset-text/0.2.9_@not-govuk+docs-components@0.2.9:
+    dependencies:
+      '@not-govuk/component-helpers': 0.2.9
+      '@not-govuk/docs-components': 0.2.9
+      '@not-govuk/sass-base': 0.2.9
+      govuk-frontend: 3.11.0
+    dev: false
+    peerDependencies:
+      '@not-govuk/docs-components': ^0.2.0
+      react: ^16.9.35
+    resolution:
+      integrity: sha512-jETTNVcxtGode0uOih9rpgyE35gUtRfXyA8I3PCr3InprwgLtBu3T+uvZFGykQ6FEAAnA64Ss79Mvr+tmrhMDQ==
   /@not-govuk/link/0.2.6:
     dependencies:
       '@not-govuk/anchor': 0.2.6
@@ -6211,6 +6295,18 @@ packages:
       react-router-dom: '*'
     resolution:
       integrity: sha512-3hdp6HpRmRomuHFv8h90KjaDqWArIiyqrLLWdUv8DAGEopWTRQszFt253/CzIJx6agINE+4BJzPaicZubga2OA==
+  /@not-govuk/link/0.2.9_@not-govuk+docs-components@0.2.9:
+    dependencies:
+      '@not-govuk/anchor': 0.2.9_@not-govuk+docs-components@0.2.9
+      '@not-govuk/docs-components': 0.2.9
+      '@not-govuk/sass-base': 0.2.9
+      govuk-frontend: 3.11.0
+    dev: false
+    peerDependencies:
+      '@not-govuk/docs-components': ^0.2.0
+      react: ^16.9.35
+    resolution:
+      integrity: sha512-iTDTr4jTrXIANTRSfMGv4/fHzST3dkKxgwRpZ/KUQ+4nxlGRIzU3wUjNZ0uCxwEi/kj/7XADCCBma6GA/9XxIw==
   /@not-govuk/memoize/0.2.9:
     dev: false
     engines:
@@ -6392,6 +6488,7 @@ packages:
       qs: 6.9.6
       react-router-dom: 5.2.0_react@16.14.0
       url-parse: 1.5.1
+    dev: true
     peerDependencies:
       react-router-dom: ^5.1.5
     resolution:
@@ -6435,11 +6532,10 @@ packages:
       react: ^16.9.35
     resolution:
       integrity: sha512-WCzw/+0OZJOvBw9E3In8wQWgubrWaQKW70WgdW6goG2NZMZ4KOwNnV8F6SlKLiwww/UkpMzImxqNCHlPS70uHA==
-  /@not-govuk/simple-table/0.2.6_f0985349df48299f7cc281311e9bebca:
+  /@not-govuk/simple-table/0.2.6_@not-govuk+docs-components@0.2.9:
     dependencies:
       '@not-govuk/component-helpers': 0.2.6
-      '@not-govuk/docs-components': 0.2.9_react@17.0.2
-      react: 17.0.2
+      '@not-govuk/docs-components': 0.2.9
     dev: false
     peerDependencies:
       '@not-govuk/docs-components': ^0.2.0
@@ -6498,12 +6594,11 @@ packages:
       react-router-dom: '*'
     resolution:
       integrity: sha512-hCz9771nK37QWf/1AwjXi9q5KC7pke1dmWB4iRV7tCcFJfswsZEV/0NCW0esqC7vyZCeF+vc9RHVuMLTvw1N5A==
-  /@not-govuk/tabs-internal/0.2.6_f0985349df48299f7cc281311e9bebca:
+  /@not-govuk/tabs-internal/0.2.6_@not-govuk+docs-components@0.2.9:
     dependencies:
       '@not-govuk/component-helpers': 0.2.6
-      '@not-govuk/docs-components': 0.2.9_react@17.0.2
+      '@not-govuk/docs-components': 0.2.9
       '@not-govuk/route-utils': 0.2.6
-      react: 17.0.2
     dev: false
     peerDependencies:
       '@not-govuk/docs-components': ^0.2.0
@@ -18855,6 +18950,7 @@ packages:
     resolution:
       integrity: sha512-fexhUFFPTGV8ybAtSIGbV6gOkSv8UtRbDBnAyLQw4QPKkgNlsH2ByPGtMUqdWkos6YCRmAqViwgZrJc/mRDzZQ==
   /object-assign/4.1.1:
+    dev: true
     engines:
       node: '>=0.10.0'
     resolution:
@@ -20633,15 +20729,6 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==
-  /react/17.0.2:
-    dependencies:
-      loose-envify: 1.4.0
-      object-assign: 4.1.1
-    dev: false
-    engines:
-      node: '>=0.10.0'
-    resolution:
-      integrity: sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==
   /reactcss/1.2.3:
     dependencies:
       lodash: 4.17.20

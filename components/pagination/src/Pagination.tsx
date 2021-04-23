@@ -48,17 +48,17 @@ export const Pagination: FC<PaginationProps> = ({
     <div className={classes()}>
       <div className={classes('summary')}>Showing {resultsFrom} - {resultsTo} of {results} results</div>
       <ul className={classes('list-items')}>
-        <li className={classes('item')} id="prevButton">
+        <li className={classes('item')} id="prevButton" key="prev">
           <a className={classes('link')} href={page>1 ? hl[1] : "" }>
             <span aria-hidden="true" role="presentation">&laquo;</span> Previous
           </a>
         </li>
         {it.map(i => (
-          <li className={classes('item')}>
+          <li className={classes('item')} key={i}>
             {pages[i] < 1 || pages[i] > maxPages ? null : <a className={classes(pages[i] === page ? 'link--current' : 'link')} href={hl[i]}>{pages[i]}</a>}
           </li>
         ))}
-        <li className={classes('item')} id="nextButton">
+        <li className={classes('item')} id="nextButton" key="next">
           <a className={classes('link')} href={resultsTo==results ? "" : hl[3] }>
             Next <span aria-hidden="true" role="presentation">&raquo;</span>
           </a>
