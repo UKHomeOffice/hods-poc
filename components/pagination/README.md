@@ -1,4 +1,4 @@
-Hods - Pagination
+HODS - Pagination
 =================
 
 A component for navigating a long list of results.

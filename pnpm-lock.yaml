@@ -83,6 +83,8 @@ importers:
       webpack-dev-middleware: ^3.7.2
       webpack-hot-middleware: ^2.25.0
   apps/docs:
+    dependencies:
+      '@hods/pagination': link:../../components/pagination
     devDependencies:
       '@apollo/client': 3.3.6_graphql@15.4.0+react@16.14.0
       '@hods/components': link:../../lib/components
@@ -117,6 +119,7 @@ importers:
       '@apollo/client': ^3.2.7
       '@hods/components': workspace:^0.1.0
       '@hods/header': workspace:^0.1.2
+      '@hods/pagination': workspace:^0.1.8
       '@not-govuk/app-composer': ^0.2.9
       '@not-govuk/client-renderer': ^0.2.9
       '@not-govuk/components': ^0.2.9
