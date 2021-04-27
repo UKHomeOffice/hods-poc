@@ -1,4 +1,4 @@
-Hods - Timeline
+HODS - Timeline
 ===============
 
 A timeline of events

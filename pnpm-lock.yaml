@@ -285,6 +285,7 @@ importers:
       '@hods/page': link:../../components/page
       '@hods/sass-base': link:../sass-base
       '@hods/status-banner': link:../../components/status-banner
+      '@hods/timeline': link:../../components/timeline
     devDependencies:
       jest: 26.6.3
       ts-jest: 26.4.4_jest@26.6.3+typescript@3.9.7
@@ -296,6 +297,7 @@ importers:
       '@hods/page': workspace:^0.1.0
       '@hods/sass-base': workspace:^0.1.0
       '@hods/status-banner': workspace:^0.1.7
+      '@hods/timeline': workspace:^0.1.8
       jest: ^26.1.0
       ts-jest: ^26.1.1
       typescript: ^3.9.2
