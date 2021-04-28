@@ -105,13 +105,4 @@ describe('Timeline', () => {
       expect(timeline.text()).toContain(items[0].description);
     });
   });
-
-  describe('when given no props', () => {
-    const timeline = mount(h(Timeline, {}));
-
-    it('displays nothing', () => {
-      expect(timeline.text()).toBe("");
-      expect(timeline.find('.hods-timeline__item')).toHaveLength(0);
-    });
-  })
 });

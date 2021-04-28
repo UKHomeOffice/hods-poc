@@ -10,7 +10,7 @@ type TimelineItem = {
   by?: string
   date: Date
   description: string
-}
+};
 
 export type TimelineProps = StandardProps & {
   /** The events to be included in the timeline. */
