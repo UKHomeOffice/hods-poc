@@ -12,11 +12,11 @@
     &:before { /* styling for lines in margin */
       background-color: govuk-colour("blue");
       content: "";
-      @include govuk-responsive-padding(1, "top");
+      padding-top: 0.3em;
       @include govuk-responsive-padding(3, "right");
       left: 0;
       position: absolute;
-      @include govuk-responsive-margin(1, "top");
+      margin-top: 0.55em;
       z-index: 1;
     }
   }
@@ -27,13 +27,13 @@
     height: 100%;
     left: 0;
     position: absolute;
-    margin-top: 8px;
-    @include govuk-responsive-padding(1, "left");
+    margin-top: 0.55em;
+    padding-left: 0.3em;
     z-index: 1;
   }
 
   &__title {
-    @include govuk-font(16, 'bold');
+    @include govuk-font(19, 'bold');
     display: inline;
   }
 
@@ -44,13 +44,13 @@
   }
 
   &__date {
-    @include govuk-font(14);
+    @include govuk-font(16);
     color: govuk-colour('dark-grey');
     @include govuk-responsive-margin(0, "top");
   }
 
   &__description {
-    @include govuk-font(14);
+    @include govuk-font(16);
     @include govuk-responsive-margin(5, "top");
   }
 }
