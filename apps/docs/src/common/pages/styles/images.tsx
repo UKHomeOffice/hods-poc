@@ -45,7 +45,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <ul className="govuk-list govuk-list--bullet">
         <li>a new or unfamiliar concept</li>
         <li>complex guidance when completing a task</li>
-        <li>how to find a reference number on a document complex.</li>
+        <li>how to find a reference number on a document</li>
       </ul>
 
       <p className="govuk-body"><A href="#Photography">Photography</A> can add visual interest to a page. We use it mostly in internal pages and services.</p>
@@ -53,7 +53,6 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <h3 className="govuk-heading-m">Sourcing images</h3>
       <p>Please contact <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A> for advice on image use and for original source files.</p>
-      <p>This helps us keep a record of what images we have.</p>
 
       <h2 id="Illustrations or representative imagery" className="govuk-heading-l">Illustrations or representative imagery</h2>
       <p className="govuk-body">Illustrations must have a consistent style to create trust. This includes print products as well.</p>
