@@ -4,7 +4,6 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
 const applyBrpExample = require('../../../../assets/images/brp-example-2.png').default;
-const applyPassportIssue = require('../../../../assets/images/passport-issue-example.png').default;
 const applyExample1 = require('../../../../assets/images/example-1.jpg').default;
 const applyExample2 = require('../../../../assets/images/example-2.jpg').default;
 const applyExample5 = require('../../../../assets/images/example-5.jpg').default;
