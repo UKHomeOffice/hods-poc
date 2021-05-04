@@ -97,53 +97,12 @@ describe('Pagination', () => {
     });
   });
 
-  describe('when given invalid props', () => {
-    const pagination = mount(h(Pagination, {
-      results: "a",
-      resultsPerPage: "b",
-      page: "c"
-    }));
-
-    let current;
-    beforeAll(() => {
-      expect(current = pagination.find('.hods-pagination__link--current')).toHaveLength(0);
-    });
-
-    const summary = pagination.find('.hods-pagination__summary').text();
-
-    it('displays NaN as the value of results from', () => {
-      expect(summary.slice(8, 11)).toEqual('NaN');
-    });
-
-    it('displays NaN as the value of results to', () => {
-      expect(summary.slice(14, 17)).toEqual('NaN');
-    });
-
-    it('displays NaN as the value of total results', () => {
-      expect(summary.slice(21, 24)).toEqual('NaN');
-    });
-  });
-
   describe('when given no props', () => {
     const pagination = mount(h(Pagination, {}));
 
     let current;
     beforeAll(() => {
       expect(current = pagination.find('.hods-pagination__link--current')).toHaveLength(0);
-    });
-
-    const summary = pagination.find('.hods-pagination__summary').text();
-
-    it('displays NaN as the value of results from', () => {
-      expect(summary.slice(8, 11)).toEqual('NaN');
-    });
-
-    it('displays NaN as the value of results to', () => {
-      expect(summary.slice(14, 17)).toEqual('NaN');
-    });
-
-    it('displays NaN as the value of total results', () => {
-      expect(summary.slice(21, 24)).toEqual('NaN');
     });
   });
 });

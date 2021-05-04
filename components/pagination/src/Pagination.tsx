@@ -55,7 +55,7 @@ export const Pagination: FC<PaginationProps> = ({
         </li>
         {it.map(i => (
           <li className={classes('item')} key={i}>
-            {pages[i] < 1 || pages[i] > maxPages ? null : <a className={classes(pages[i] === page ? 'link--current' : 'link')} href={hl[i]}>{pages[i]}</a>}
+            {pages[i] < 1 || pages[i] > maxPages ? null : <a className={classes('link', pages[i] === page ? 'current' : undefined)} href={hl[i]}>{pages[i]}</a>}
           </li>
         ))}
         <li className={classes('item')} id="nextButton" key="next">

@@ -7,7 +7,7 @@ import readMe from '../README.md';
   component={ Pagination }
   parameters={ {
     chromatic: { viewports: [640, 480] },
-    description: 'Component to allow separating long tables into separate tables',
+    description: 'Component to enable navigating a long list of results.',
     jest: ['Pagination'],
     notes: readMe
   } }
@@ -16,6 +16,31 @@ import readMe from '../README.md';
 # Pagination
 
 A component for navigating a long list of results.
+
+### Design so you don’t need pagination
+Pagination hides content from the user. It can display a lot of unhelpful information that gets in the way to what the users are looking for. This may indicate the design isn’t working.
+
+### Interaction principles
+You can avoid pagination by:
+<ul><li>setting the default number of results per page (try 50 items per page, although do test with users to get it right for that service)</li>
+<li>avoid infinite scrolling as this is problematic for keyboard-only users.</li></ul>
+
+### Content principles
+Consider what the sorting order should be to make the search more relevant. The more specific it is to the user's search criteria, the better the search results.
+
+### Services using non-paginated search results:
+<ul><li>Returns and movement</li>
+<li>Passport application search.</li></ul>
+
+### If you do require pagination, ensure that:
+<ul><li>there is good colour contrast</li>
+<li>the font size is legible</li>
+<li>large clickable hit areas are provided and are clearly spaced out</li>
+<li>the current page is clearly identified</li>
+<li>you set a maximum list of 5 pages</li>
+<li>you provide 'previous' and 'next' links. Don't rely on icons alone.</li></ul>
+
+### Example component
 
 <Preview>
   <Story name="Pagination">
@@ -116,21 +141,6 @@ A pagination component with a different number of results per page.
       results="249"
       resultsPerPage="10"
       page="2"
-    />
-  </Story>
-</Preview>
-
-
-### Invalid props
-
-A pagination component with invalid props entered.
-
-<Preview>
-  <Story name="Invalid props">
-    <Pagination
-      results="two hundred and forty nine"
-      resultsPerPage="ten"
-      page="two"
     />
   </Story>
 </Preview>
