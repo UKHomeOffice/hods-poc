@@ -1,6 +1,6 @@
 {
   "name": "@hods/components",
-  "version": "0.1.10",
+  "version": "0.1.13",
   "description": "All Home Office Design System components.",
   "main": "src/index.ts",
   "sass": "assets/index.scss",
@@ -29,7 +29,8 @@
     "@hods/header": "workspace:^0.1.0",
     "@hods/page": "workspace:^0.1.0",
     "@hods/sass-base": "workspace:^0.1.0",
-    "@hods/status-banner": "workspace:^0.1.7"
+    "@hods/status-banner": "workspace:^0.1.7",
+    "@hods/timeline": "workspace:^0.1.8"
   },
   "devDependencies": {
     "jest": "^26.1.0",

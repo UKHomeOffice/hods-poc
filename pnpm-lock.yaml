@@ -119,7 +119,6 @@ importers:
       '@apollo/client': ^3.2.7
       '@hods/components': workspace:^0.1.0
       '@hods/header': workspace:^0.1.2
-      '@hods/pagination': workspace:^0.1.8
       '@not-govuk/app-composer': ^0.2.10
       '@not-govuk/client-renderer': ^0.2.10
       '@not-govuk/components': ^0.2.10
@@ -288,6 +287,26 @@ importers:
       jest: ^26.1.0
       ts-jest: ^26.1.1
       typescript: ^3.9.2
+  components/timeline:
+    dependencies:
+      '@hods/sass-base': 0.1.12
+      '@not-govuk/component-helpers': 0.2.10
+    devDependencies:
+      '@mdx-js/react': 1.6.22
+      '@not-govuk/component-test-helpers': 0.2.10
+      '@types/react': 16.14.2
+      jest: 26.6.3
+      ts-jest: 26.4.4_jest@26.6.3+typescript@3.9.7
+      typescript: 3.9.7
+    specifiers:
+      '@hods/sass-base': ^0.1.10
+      '@mdx-js/react': ^1.6.5
+      '@not-govuk/component-helpers': ^0.2.0
+      '@not-govuk/component-test-helpers': ^0.2.0
+      '@types/react': ^16.9.35
+      jest: ^26.1.0
+      ts-jest: ^26.1.1
+      typescript: ^3.9.2
   lib/components:
     dependencies:
       '@hods/alert': link:../../components/alert
@@ -296,6 +315,7 @@ importers:
       '@hods/page': link:../../components/page
       '@hods/sass-base': link:../sass-base
       '@hods/status-banner': link:../../components/status-banner
+      '@hods/timeline': link:../../components/timeline
     devDependencies:
       jest: 26.6.3
       ts-jest: 26.4.4_jest@26.6.3+typescript@3.9.7
@@ -307,6 +327,7 @@ importers:
       '@hods/page': workspace:^0.1.0
       '@hods/sass-base': workspace:^0.1.0
       '@hods/status-banner': workspace:^0.1.7
+      '@hods/timeline': workspace:^0.1.8
       jest: ^26.1.0
       ts-jest: ^26.1.1
       typescript: ^3.9.2
@@ -4926,88 +4947,12 @@ packages:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
     resolution:
       integrity: sha512-wYn6r8zVZyQJ6rQaALBEln5B1pzxb9shV5Ef97kTvn6yVGrqyXVnDqnU24MXnFubR+rZjBY9NWuxX3FB2sTsjg==
-  /@hods/alert/0.1.12_951e9646a995acb7ec743976ddc9527e:
-    dependencies:
-      '@hods/sass-base': 0.1.12
-      '@not-govuk/component-helpers': 0.2.10
-      '@not-govuk/docs-components': 0.2.10
-      '@not-govuk/inset-text': 0.2.10_951e9646a995acb7ec743976ddc9527e
-    dev: false
-    peerDependencies:
-      '@not-govuk/docs-components': ^0.2.0
-      react: ^16.9.35
-    resolution:
-      integrity: sha512-tM8a/6F0Y9JE1VQP3N7ZDb9LniIRxGBKWYPBTC6oR34VRvakq1g/PErwxO1ZU+EkY8I/lOjAokebJNpp5++E4A==
-  /@hods/components/0.1.12_951e9646a995acb7ec743976ddc9527e:
-    dependencies:
-      '@hods/alert': 0.1.12_951e9646a995acb7ec743976ddc9527e
-      '@hods/footer': 0.1.12_951e9646a995acb7ec743976ddc9527e
-      '@hods/header': 0.1.12_951e9646a995acb7ec743976ddc9527e
-      '@hods/page': 0.1.12_951e9646a995acb7ec743976ddc9527e
-      '@hods/sass-base': 0.1.12
-      '@hods/status-banner': 0.1.12_951e9646a995acb7ec743976ddc9527e
-    dev: false
-    peerDependencies:
-      '@not-govuk/docs-components': '*'
-    resolution:
-      integrity: sha512-Fj1Fe5MHu570rHug80kUuQLMdCJdRXWRaSzTK1T01w/U7YVWhFIFmzV27kGTC9Q3ViHnlg/rBmqvWO52/cYVTA==
-  /@hods/footer/0.1.12_951e9646a995acb7ec743976ddc9527e:
-    dependencies:
-      '@hods/sass-base': 0.1.12
-      '@not-govuk/component-helpers': 0.2.10
-      '@not-govuk/docs-components': 0.2.10
-      '@not-govuk/link': 0.2.10_951e9646a995acb7ec743976ddc9527e
-    dev: false
-    peerDependencies:
-      '@not-govuk/docs-components': ^0.2.0
-      react: ^16.9.35
-    resolution:
-      integrity: sha512-AaXMh8s/LWSiSC10ed/LEsAnv3ElYH63Kc5HtJiIkRc4dzs7TTAiVBuLfDAm8reXkexEUnh7RVuJi+zdWRX3Hw==
-  /@hods/header/0.1.12_951e9646a995acb7ec743976ddc9527e:
-    dependencies:
-      '@hods/sass-base': 0.1.12
-      '@not-govuk/anchor-list': 0.2.10_951e9646a995acb7ec743976ddc9527e
-      '@not-govuk/component-helpers': 0.2.10
-      '@not-govuk/docs-components': 0.2.10
-      '@not-govuk/link': 0.2.10_951e9646a995acb7ec743976ddc9527e
-    dev: false
-    peerDependencies:
-      '@not-govuk/docs-components': ^0.2.0
-      react: ^16.9.35
-    resolution:
-      integrity: sha512-2tJo7naNMlZETbYxn6vbVyirI12qKX90DOEJzJx2YtqSA8m/CIHTGPqtryiIB270aKfds2aJO6oN/02Gdv51KA==
-  /@hods/page/0.1.12_951e9646a995acb7ec743976ddc9527e:
-    dependencies:
-      '@hods/footer': 0.1.12_951e9646a995acb7ec743976ddc9527e
-      '@hods/header': 0.1.12_951e9646a995acb7ec743976ddc9527e
-      '@hods/sass-base': 0.1.12
-      '@not-govuk/component-helpers': 0.2.10
-      '@not-govuk/docs-components': 0.2.10
-      govuk-frontend: 3.11.0
-    dev: false
-    peerDependencies:
-      '@not-govuk/docs-components': ^0.2.0
-      react: ^16.9.35
-      react-helmet-async: ^1.0.7
-    resolution:
-      integrity: sha512-jrXazkLDMTwoL/kns/7TTFHqHbKe+WtboXBhrY5tkVQmRw9OAsCe8SQs/a9V3qFwG/DmUm/t32yuL13KOM2CxQ==
   /@hods/sass-base/0.1.12:
     dependencies:
       '@not-govuk/sass-base': 0.2.10
     dev: false
     resolution:
       integrity: sha512-3ifF/KeJwWjbmHfQ1PE5vSYPcx+5q4KjveYN4iqrEAb4aQ+6Jra5VmYtQKEdfkAYhFZsCx4yZSHH6xk75MuVhQ==
-  /@hods/status-banner/0.1.12_951e9646a995acb7ec743976ddc9527e:
-    dependencies:
-      '@hods/sass-base': 0.1.12
-      '@not-govuk/component-helpers': 0.2.10
-      '@not-govuk/docs-components': 0.2.10
-    dev: false
-    peerDependencies:
-      '@not-govuk/docs-components': ^0.2.0
-      react: ^16.9.35
-    resolution:
-      integrity: sha512-NG93PxP2jzDFM2sngJasy48lx/fMFmvWcigJNP6IziMM/URhRHUGWdRwySWWCHuzQYqU9PGNI8WnYtxHy5en+A==
   /@icons/material/0.2.4_react@16.14.0:
     dependencies:
       react: 16.14.0
