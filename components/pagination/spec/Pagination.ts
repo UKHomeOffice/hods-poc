@@ -88,12 +88,12 @@ describe('Pagination', () => {
     const prev = pagination.find('#prevButton');
     const next = pagination.find('#nextButton');
 
-    it('displays the previous link in the correct place', () => {
-      expect(ul.childAt(0)).toEqual(prev);
+    it('does not display the previous link', () => {
+      expect(ul.childAt(0)).not.toEqual(prev);
     });
 
     it('displays the next link in the correct place', () => {
-      expect(ul.childAt(6)).toEqual(next);
+      expect(ul.childAt(5)).toEqual(next);
     });
   });
 
