@@ -248,10 +248,8 @@ importers:
 
   components/pagination:
     specifiers:
-      '@hods/components': ^0.1.10
       '@hods/sass-base': ^0.1.10
       '@mdx-js/react': ^1.6.5
-      '@not-govuk/anchor': ^0.2.9
       '@not-govuk/component-helpers': ^0.2.9
       '@not-govuk/component-test-helpers': ^0.2.0
       '@not-govuk/docs-components': ^0.2.9
@@ -261,9 +259,7 @@ importers:
       ts-jest: ^26.1.1
       typescript: ^3.9.2
     dependencies:
-      '@hods/components': link:../../lib/components
       '@hods/sass-base': link:../../lib/sass-base
-      '@not-govuk/anchor': 0.2.10_951e9646a995acb7ec743976ddc9527e
       '@not-govuk/component-helpers': 0.2.10
       '@not-govuk/docs-components': 0.2.10
       '@not-govuk/sass-base': 0.2.10
@@ -5909,18 +5905,6 @@ packages:
       react: 16.14.0
       react-router-dom: 5.2.0_react@16.14.0
     dev: true
-
-  /@not-govuk/anchor/0.2.10_951e9646a995acb7ec743976ddc9527e:
-    resolution: {integrity: sha512-tk1VnY1gASXVHg1MMVsiHlYFuNlWPLncFI1R6oqVnBlk/hUOUdEi/8ze6O+eZPKOgu1RkJez9Vg7AJkKDVNX1Q==}
-    peerDependencies:
-      '@not-govuk/docs-components': ^0.2.0
-      react: ^16.9.35
-      react-router-dom: ^5.1.5
-    dependencies:
-      '@not-govuk/component-helpers': 0.2.10
-      '@not-govuk/docs-components': 0.2.10
-      '@not-govuk/route-utils': 0.2.10
-    dev: false
 
   /@not-govuk/anchor/0.2.10_95b288cec450fcfc86fa808cbc77a1ae:
     resolution: {integrity: sha512-tk1VnY1gASXVHg1MMVsiHlYFuNlWPLncFI1R6oqVnBlk/hUOUdEi/8ze6O+eZPKOgu1RkJez9Vg7AJkKDVNX1Q==}
