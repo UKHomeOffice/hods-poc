@@ -24,25 +24,6 @@ const Page: FC<PageProps> = ({ location }) => (
       </h1>
       <p>It's important to consider how people with different access needs will use media content.</p>
 
-      <p>Here are some examples of users with different access needs: </p>
-
-      <ul>
-
-      <li>someone who has a cognitive impairment may have difficulty processing auditory information
-       and find it helpful to use captions</li>
-
-      <li>if you’re deaf or have a hearing impairment you will not be able to hear the audio and will
-       use captions or a transcript</li>
-
-      <li>a user who is blind or partially sighted may use audio descriptions to understand what's
-      happening visually, or they may use text-to-speech software to read out a transcript</li>
-
-      <li>someone who is deafblind may use braille to read a transcript</li>
-
-      <li>if you rely on keyboard navigation or use a screen reader you’ll need an accessible media
-      player</li>
-
-      </ul>
 
       <table class="govuk-table">
         <caption class="govuk-table__caption govuk-table__caption--m">Examples of users with access needs</caption>
@@ -215,6 +196,12 @@ and a transcript. </p>
 
 <li>ensure that the media player meets all other accessibility considerations, such as keyboard accessibility </li>
 </ul>
+
+<h2>Sign language</h2>
+
+<p>Provide sign language interpretation for video that has audio content - when you have identified a need.</p>
+
+<p>You can arrange sign language interpretation services through TheBigWord. Contact <A href="mailto:lauren.brayshaw@thebigword.com">lauren.brayshaw@thebigword.com</A>.</p> 
 
 <h2>When you cannot make something accessible</h2>
 
