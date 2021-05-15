@@ -241,8 +241,6 @@ importers:
     dependencies:
       '@hods/sass-base': 'link:../../lib/sass-base'
       '@not-govuk/component-helpers': 0.2.10
-      '@not-govuk/docs-components': 0.2.10
-      '@not-govuk/sass-base': 0.2.10
     devDependencies:
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-test-helpers': 0.2.10
@@ -251,12 +249,10 @@ importers:
       ts-jest: 26.4.4_jest@26.6.3+typescript@3.9.7
       typescript: 3.9.7
     specifiers:
-      '@hods/sass-base': ^0.1.10
+      '@hods/sass-base': 'workspace:^0.1.13'
       '@mdx-js/react': ^1.6.5
       '@not-govuk/component-helpers': ^0.2.9
       '@not-govuk/component-test-helpers': ^0.2.0
-      '@not-govuk/docs-components': ^0.2.9
-      '@not-govuk/sass-base': ^0.2.9
       '@types/react': ^16.9.35
       jest: ^26.1.0
       ts-jest: ^26.1.1
@@ -6036,22 +6032,6 @@ packages:
       react: ^16.9.35
     resolution:
       integrity: sha512-4aUSYz4Nm4lEfoP7EkYUqMgOvAFmKCU78pAm96mx3jLAJRO40OT9g/dm0gAHiVqUKLHMmOZc1whiZJk6TzxwvQ==
-  /@not-govuk/docs-components/0.2.10:
-    dependencies:
-      '@not-govuk/component-helpers': 0.2.10
-      '@not-govuk/memoize': 0.2.10
-      '@not-govuk/simple-table': 0.2.10_951e9646a995acb7ec743976ddc9527e
-      '@not-govuk/tabs-internal': 0.2.10_951e9646a995acb7ec743976ddc9527e
-      prettier: 2.2.1
-      prismjs: 1.23.0
-      prismjs-github: 1.0.0
-    dev: false
-    peerDependencies:
-      '@storybook/addon-docs': ^6.0.28
-      react: ^16.9.35
-      react-helmet-async: ^1.0.7
-    resolution:
-      integrity: sha512-U7WgbwFXl4Qx0Qz8zhsz0IdUxYn4aS6oI0Vs5ipKPxBG9Ch0f+q+5TF6hID5LuQcsNOThmWWnHoIclLZMsq1GA==
   /@not-govuk/docs-components/0.2.10_e0b71065dafb84c9aad0ad10a56d88b7:
     dependencies:
       '@not-govuk/component-helpers': 0.2.10
@@ -6255,6 +6235,7 @@ packages:
     resolution:
       integrity: sha512-Mw1W0mPiO6gJZho/j9R6r7lh/emk62a4EBhQj3vYPgjNc2RkDv4l20PMvMckyp+XkQ4MUHDVLFAJwIM3i/kVHw==
   /@not-govuk/memoize/0.2.10:
+    dev: true
     engines:
       node: '>=12.0.0'
     resolution:
@@ -6472,16 +6453,6 @@ packages:
       react: ^16.9.35
     resolution:
       integrity: sha512-oUg1In36Ew6lA5LUc8vCOmmsoaXmKcet7D8gyIV8f2Fl4qNz3GYD8iwaC0qAxzzj8wM6fPAMuaryYQ4r+FREMQ==
-  /@not-govuk/simple-table/0.2.10_951e9646a995acb7ec743976ddc9527e:
-    dependencies:
-      '@not-govuk/component-helpers': 0.2.10
-      '@not-govuk/docs-components': 0.2.10
-    dev: false
-    peerDependencies:
-      '@not-govuk/docs-components': ^0.2.0
-      react: ^16.9.35
-    resolution:
-      integrity: sha512-oUg1In36Ew6lA5LUc8vCOmmsoaXmKcet7D8gyIV8f2Fl4qNz3GYD8iwaC0qAxzzj8wM6fPAMuaryYQ4r+FREMQ==
   /@not-govuk/simple-table/0.2.10_react@16.14.0:
     dependencies:
       '@not-govuk/component-helpers': 0.2.10
@@ -6558,17 +6529,6 @@ packages:
       react: ^16.9.35
     resolution:
       integrity: sha512-a0a2PLhF3f59N5mTw66S4vsF3Uq/mmFVXFm+ExHG8vQURQOr3Df8lGm4TXAMvdFLIX7zM7DtF8tcL9Sg1JgenA==
-  /@not-govuk/tabs-internal/0.2.10_951e9646a995acb7ec743976ddc9527e:
-    dependencies:
-      '@not-govuk/component-helpers': 0.2.10
-      '@not-govuk/docs-components': 0.2.10
-      '@not-govuk/route-utils': 0.2.10
-    dev: false
-    peerDependencies:
-      '@not-govuk/docs-components': ^0.2.0
-      react: ^16.9.35
-    resolution:
-      integrity: sha512-AhnlfKQk0Wf3Uvd8y/F0EkvyWxcWFWf/uG0Bd7gqTrFTub+CnX6gSSM56G1te2t9iQnbnV18gCMCwuQUPmpmPw==
   /@not-govuk/tabs-internal/0.2.10_95b288cec450fcfc86fa808cbc77a1ae:
     dependencies:
       '@not-govuk/component-helpers': 0.2.10
@@ -11073,6 +11033,7 @@ packages:
       good-listener: 1.2.2
       select: 1.1.2
       tiny-emitter: 2.1.0
+    dev: true
     optional: true
     resolution:
       integrity: sha512-Y6WO0unAIQp5bLmk1zdThRhgJt/x3ks6f30s3oE3H1mgIEU33XyQjEf8gsf6DxC7NPX8Y1SsNWjUjL/ywLnnbQ==
@@ -12117,6 +12078,7 @@ packages:
     resolution:
       integrity: sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
   /delegate/3.2.0:
+    dev: true
     optional: true
     resolution:
       integrity: sha512-IofjkYBZaZivn0V8nnsMJGBr4jVLxHDheKSW88PyxS5QC4Vo9ZbZVvhzlSxY87fVq3STR6r+4cGepyHkcWOQSw==
@@ -14387,6 +14349,7 @@ packages:
   /good-listener/1.2.2:
     dependencies:
       delegate: 3.2.0
+    dev: true
     optional: true
     resolution:
       integrity: sha1-1TswzfkxPf+33JoNR3CWqm0UXFA=
@@ -20066,6 +20029,7 @@ packages:
     resolution:
       integrity: sha512-7PtVymN48hGcO4fGjybyBSIWDsLU4H4XlvOHfq91pz9kkGlonzwTfYkaIEwiRg/dAJF9YlbsduBAgtYLi+8cFg==
   /prettier/2.2.1:
+    dev: true
     engines:
       node: '>=10.13.0'
     hasBin: true
@@ -20129,6 +20093,7 @@ packages:
     resolution:
       integrity: sha512-G2gJwLzLcYS+2m6bTAe+CcDpwak9YpcvpScI0tE4WYb2O3lEZD/YywkMNpGqsSx5wttGvh2UXaKROTKKCyM2dw==
   /prismjs-github/1.0.0:
+    dev: true
     resolution:
       integrity: sha512-viBNgmYXllsWaLMvyiEC+g0hFagYd/r1Rvz2iYFt7tkx6Jv+PpQ5k93npV5sZD25Amu3Sl5lj8Mft0mUF+i/KA==
   /prismjs/1.17.1:
@@ -20144,6 +20109,7 @@ packages:
     resolution:
       integrity: sha512-lLJ/Wt9yy0AiSYBf212kK3mM5L8ycwlyTlSxHBAneXLR0nzFMlZ5y7riFPF3E33zXOF2IH95xdY5jIyZbM9z/w==
   /prismjs/1.23.0:
+    dev: true
     optionalDependencies:
       clipboard: 2.0.8
     resolution:
@@ -21774,6 +21740,7 @@ packages:
     resolution:
       integrity: sha1-Yl2GWPhlr0Psliv8N2o3NZpJlMo=
   /select/1.1.2:
+    dev: true
     optional: true
     resolution:
       integrity: sha1-DnNQrN7ICxEIUoeG7B1EGNEbOW0=
@@ -23121,6 +23088,7 @@ packages:
     resolution:
       integrity: sha512-b85NUNzTSdodShTIbky6ZF02e8STtVVfD+fu4aXXShEELpozH+bCpJLYMPZbsABN2wDH7fJpqIoXxJpzbf0NqQ==
   /tiny-emitter/2.1.0:
+    dev: true
     optional: true
     resolution:
       integrity: sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==
