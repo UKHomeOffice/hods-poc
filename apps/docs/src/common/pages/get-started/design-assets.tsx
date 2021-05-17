@@ -3,8 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
-const applyPrototype1 = require('../../../../assets/images/prototype-screen01.png').default;
-const applyPrototype2 = require('../../../../assets/images/prototype-screen02.png').default;
+const muralAUP = require('../../../../assets/docs/Mural_AUP.pdf').default;
 
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
