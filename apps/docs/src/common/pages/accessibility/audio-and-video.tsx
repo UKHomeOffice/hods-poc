@@ -25,46 +25,46 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>It's important to consider how people with different access needs will use media content.</p>
 
 
-      <table class="govuk-table">
-        <caption class="govuk-table__caption govuk-table__caption--m">Examples of users with access needs</caption>
-        <thead class="govuk-table__head">
-          <tr class="govuk-table__row">
-            <th scope="col" class="govuk-table__header">User</th>
-            <th scope="col" class="govuk-table__header">Access need</th>
-            <th scope="col" class="govuk-table__header">May find helpful</th>
+      <table className="govuk-table">
+        <caption ="govuk-table__caption govuk-table__caption--m">Examples of users with access needs</caption>
+        <thead className="govuk-table__head">
+          <tr className="govuk-table__row">
+            <th scope="col" className="govuk-table__header">User</th>
+            <th scope="col" className="govuk-table__header">Access need</th>
+            <th scope="col" className="govuk-table__header">May find helpful</th>
           </tr>
         </thead>
-        <tbody class="govuk-table__body">
-          <tr class="govuk-table__row">
-            <td class="govuk-table__cell">Cognitive impairment</td>
-            <td class="govuk-table__cell">Difficulty processing auditory information</td>
-            <td class="govuk-table__cell">Captions</td>
+        <tbody className="govuk-table__body">
+          <tr className="govuk-table__row">
+            <td className="govuk-table__cell">Cognitive impairment</td>
+            <td className="govuk-table__cell">Difficulty processing auditory information</td>
+            <td className="govuk-table__cell">Captions</td>
 
           </tr>
-          <tr class="govuk-table__row">
-            <td class="govuk-table__cell">Deaf or has a hearing impairment</td>
-            <td class="govuk-table__cell">Cannot hear the audio</td>
-            <td class="govuk-table__cell">Captions or a transcript</td>
+          <tr className="govuk-table__row">
+            <td className="govuk-table__cell">Deaf or has a hearing impairment</td>
+            <td className="govuk-table__cell">Cannot hear the audio</td>
+            <td className="govuk-table__cell">Captions or a transcript</td>
 
           </tr>
-          <tr class="govuk-table__row">
-            <td class="govuk-table__cell">Blind or partially sighted</td>
-            <td class="govuk-table__cell">Cannot see the visual elements of a video</td>
-            <td class="govuk-table__cell">Text-to-speech software to read a transcript</td>
-
-          </tr>
-
-          <tr class="govuk-table__row">
-            <td class="govuk-table__cell">Deafblind</td>
-            <td class="govuk-table__cell">Cannot hear audio or see the visual elements</td>
-            <td class="govuk-table__cell">Braille to read a transcript</td>
+          <tr className="govuk-table__row">
+            <td className="govuk-table__cell">Blind or partially sighted</td>
+            <td className="govuk-table__cell">Cannot see the visual elements of a video</td>
+            <td className="govuk-table__cell">Text-to-speech software to read a transcript</td>
 
           </tr>
 
-          <tr class="govuk-table__row">
-            <td class="govuk-table__cell">Motor impairment</td>
-            <td class="govuk-table__cell">Cannot use a mouse</td>
-            <td class="govuk-table__cell">An accessible media player that can be used with keyboard navigation</td>
+          <tr className="govuk-table__row">
+            <td className="govuk-table__cell">Deafblind</td>
+            <td className="govuk-table__cell">Cannot hear audio or see the visual elements</td>
+            <td className="govuk-table__cell">Braille to read a transcript</td>
+
+          </tr>
+
+          <tr className="govuk-table__row">
+            <td className="govuk-table__cell">Motor impairment</td>
+            <td className="govuk-table__cell">Cannot use a mouse</td>
+            <td className="govuk-table__cell">An accessible media player that can be used with keyboard navigation</td>
 
           </tr>
         </tbody>
@@ -201,7 +201,7 @@ and a transcript. </p>
 
 <p>Provide sign language interpretation for video that has audio content - when you have identified a need.</p>
 
-<p>You can arrange sign language interpretation services through TheBigWord. Contact <A href="mailto:lauren.brayshaw@thebigword.com">lauren.brayshaw@thebigword.com</A>.</p> 
+<p>You can arrange sign language interpretation services through TheBigWord. Contact <A href="mailto:lauren.brayshaw@thebigword.com">lauren.brayshaw@thebigword.com</A>.</p>
 
 <h2>When you cannot make something accessible</h2>
 
