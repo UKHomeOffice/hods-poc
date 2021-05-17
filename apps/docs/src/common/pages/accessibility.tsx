@@ -7,7 +7,7 @@ const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
     <Helmet>
       <title>Accessibility - Home Office Design System</title>
-      <meta name="og:article:section" content="Resources" />
+      <meta name="og:article:section" content="Accessibility" />
     </Helmet>
     <div className="govuk-grid-column-one-quarter">
       <NavigationMenu items={[
