@@ -3,8 +3,6 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
-const muralAUP = require('../../../../assets/docs/Mural_AUP.pdf').default;
-
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
     <Helmet>
@@ -35,7 +33,6 @@ const Page: FC<PageProps> = ({ location }) => (
         <li><A href="https://www.figma.com/file/URKoeYCUBVGqz6KROO3fLh/HO-DDaT-journey-map-template?node-id=64%3A0/">Journey map template (Figma)</A></li>
         <li><A href="https://www.figma.com/file/4uhWNtmvpZq7NF8mLlsXFS/Home-Office-Design-Library?node-id=4%3A76/">Styles and components (Figma)</A></li>
       </ul>
-      <span dangerouslySetInnerHTML={{ __html: `<!-- Mural AUP: ${muralAUP} -->` }} />
       <h2>GOV.UK</h2>
       <ul className="plain">
         <li><A href="https://github.com/alphagov/govuk-prototype-kit/">HTML prototype kit</A></li>
